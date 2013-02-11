@@ -29,7 +29,7 @@
 			var data = $(this).serializeObject();
 			$.ajax({
 				'type': 'POST',
-				'url': "/SpringSecurityAjax/alogin",
+				'url': "/SpringSecurityAjax/login",
 				'contentType': 'application/json',
 				'data': JSON.stringify(data),
 				'dataType': 'json',

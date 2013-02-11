@@ -11,9 +11,9 @@
     <security:http use-expressions='true'>
         <security:intercept-url pattern="/user/create" access="isAuthenticated()"/>
         <security:intercept-url pattern="/**" access="permitAll"/>
-        <security:form-login login-page="/login1" authentication-failure-url="/login?login_error=1" />
+        <security:form-login login-page="/login" authentication-failure-url="/login?login_error=1" />
         <security:anonymous />
-        <security:logout logout-url="/login1"/>
+        <security:logout logout-url="/login"/>
     </security:http>
 
     <security:authentication-manager alias="authenticationManager">
